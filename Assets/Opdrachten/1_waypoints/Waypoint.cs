@@ -11,7 +11,5 @@ namespace Opdrachten
     public class Waypoint : MonoBehaviour
     {
         public Vector3 Position { get { return transform.position; } }
-
-        public GameObject[,] test;
     }
 }
