@@ -13,12 +13,15 @@ namespace Opdrachten
     public class Path : MonoBehaviour
     {
 
+
         /// <summary>
         /// Deze functie returned het volgende waypoint waar naartoe kan worden bewogen.
         /// </summary>
         public Waypoint GetNextWaypoint()
         {
-            
+
+            // dit is nu niet goed, zorg ervoor dat het goede waypoint wordt teruggegeven.
+            return null;
         }
     }
 }
