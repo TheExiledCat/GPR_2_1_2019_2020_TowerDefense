@@ -12,6 +12,8 @@ namespace Opdrachten
     
     public class PathFollower : MonoBehaviour
     {
+        public int currentHp;
+        public int hp;
         int index;
         public Waypoint target;
         public float speed;
@@ -19,8 +21,9 @@ namespace Opdrachten
         public int damage =1;
         private void Start()
         {
+            currentHp = hp;
            p= GameObject.FindGameObjectWithTag("Path").GetComponent<Path>();
-            Debug.Log(p);
+
             index = 0;
            target= p.waypoints[0];
         }
@@ -34,8 +37,16 @@ namespace Opdrachten
                     index++;
                 
             }
-            if(target!=null)
-            transform.position = Vector3.MoveTowards(transform.position, target.gameObject.transform.position, speed / 100);
+            if (target != null)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, target.gameObject.transform.position, speed / 100);
+                transform.LookAt(target.Position);
+            }
+            if (currentHp <= 0)
+            {
+                GameManager.GM.GetCash(100);
+                Destroy(gameObject);
+            }
         }
     }
 }

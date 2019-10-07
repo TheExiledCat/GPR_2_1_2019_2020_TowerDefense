@@ -104,9 +104,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916eb080c00ec91498c054f638315b95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootRadius: 0
+  BulletPref: {fileID: 0}
   path1: {fileID: 11400000, guid: 724abbb2e3a7d6a4ea315acdc8a60432, type: 2}
   path2: {fileID: 11400000, guid: 91e756cefbadff947b7262559b41ca54, type: 2}
   towerOptions:
   - {fileID: 6474097826865763949, guid: cab2ab3780f21d34cbfda721687644ed, type: 3}
   - {fileID: 7398294741473145944, guid: 96c92e9ea2a416e4a99b2097970819c3, type: 3}
   uisprite: {fileID: 21300000, guid: 599858ee4bd51f44786ed313e989a87c, type: 3}
+  cost: 400
+  targeted: 0
+  colliders: []
+  pathlvl1: 0
+  pathlvl2: 0
+  path1sprite: {fileID: 0}
+  path2sprite: {fileID: 0}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256

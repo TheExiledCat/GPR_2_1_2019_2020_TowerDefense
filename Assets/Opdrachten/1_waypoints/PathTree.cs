@@ -9,7 +9,7 @@ public class PathTree : ScriptableObject
     public string objectName = "new Pathline";
     public Sprite[] sprites;
     public Sprite currentSprite;
-    public int level=1;
+    
     
     // Start is called before the first frame update
     

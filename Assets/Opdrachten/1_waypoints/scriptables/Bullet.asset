@@ -16,4 +16,3 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 7b875c650652d244381cec4041da46e8, type: 3}
   currentSprite: {fileID: 21300000, guid: 7b875c650652d244381cec4041da46e8, type: 3}
-  level: 2

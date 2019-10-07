@@ -26,7 +26,7 @@ namespace Opdrachten
                 // dit is nu niet goed, zorg ervoor dat het goede waypoint wordt teruggegeven.
                 return waypoints[index];
             }
-            else { GameManager.GM.enemies.Remove(Caller); GameManager.GM.HP -= Caller.GetComponent<PathFollower>().damage; Destroy(Caller); GameManager.GM.LessEnemies();  }
+            else { GameManager.GM.enemies.Remove(Caller); GameManager.GM.TakeDmg(Caller.GetComponent<PathFollower>().damage); Destroy(Caller); GameManager.GM.LessEnemies();  }
             
             return null;
         }

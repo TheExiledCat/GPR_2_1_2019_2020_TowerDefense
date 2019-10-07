@@ -170,12 +170,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b81afd367bb2ee4288777b4d7609ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootRadius: 2.8
+  BulletPref: {fileID: 283200966328098626, guid: 2ce5540e2af129547a792cae99fe9cde,
+    type: 3}
   path1: {fileID: 11400000, guid: 84b6aaab7dfdbf04ca2a308765949d9f, type: 2}
   path2: {fileID: 11400000, guid: 5af2998676f9f5d42889b82258f98e7f, type: 2}
-  towerOptions:
-  - {fileID: 0}
-  - {fileID: 0}
+  towerOptions: []
   uisprite: {fileID: 21300000, guid: 7b875c650652d244381cec4041da46e8, type: 3}
+  targeted: 1
+  colliders: []
+  pathlvl1: 0
+  pathlvl2: 0
+  path1sprite: {fileID: 0}
+  path2sprite: {fileID: 0}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  bulletSpeed: 25
 --- !u!65 &6488899146349572018
 BoxCollider:
   m_ObjectHideFlags: 0
